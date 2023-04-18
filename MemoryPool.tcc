@@ -3,6 +3,7 @@
 
 #include "MemoryPool.h"
 
+//计算对齐所需补的空间
 template <typename T, size_t BlockSize>
 inline typename MemoryPool<T, BlockSize>::size_type
 MemoryPool<T, BlockSize>::padPointer(data_pointer_ p, size_type align) const noexcept {
